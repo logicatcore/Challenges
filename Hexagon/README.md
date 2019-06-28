@@ -1,7 +1,7 @@
 # Program working
 
 # Task
-Find the 2000th number in the Hexagonal arrangement as seen in the sample picture,
+Find the 2000th number in the Hexagonal arrangement as seen in the sample picture(problemExplanation.png),
 which can divide the rest other 6 neighbouring numbers perfectly(remainder 0).
 
 # Interpreter and language used
