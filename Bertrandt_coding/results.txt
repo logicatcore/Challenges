@@ -1,0 +1,14 @@
+
+Path to the destination planet is: [18, 810, 595, 132, 519, 71, 432, 246]
+Cost to reach the destination planet is: 2.99568789599945795
+
+Edges traversed and the corresponding costs.
+
+{"source":18,"target":810,"cost":0.04060214221510905}
+{"source":595,"target":810,"cost":0.1628038931266662}
+{"source":132,"target":595,"cost":0.6331384762650787}
+{"source":132,"target":519,"cost":0.6333618615566976}
+{"source":71,"target":519,"cost":0.7625760415706333}
+{"source":71,"target":432,"cost":0.6742157893614655}
+{"source":246,"target":432,"cost":0.08898969190380779}
+

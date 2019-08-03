@@ -1,0 +1,135 @@
+1000 Nodes
+1500 Paths
+
+Every node has the following three properties.
+
+Which means that, you are restricted in the way you move from one planet to another planet much like ROAD networks available in the traffic.
+
+Task is to start from EARTH node and reach the destination planet using the shortest and hence the fastest way!!
+
+There is one solution they say.
+
+Source:
+Target:
+Cost:
+
+
+Earth Node 18
+detination planet is Node 246
+
+
+
+import json
+
+with open('generatedGraph.json') as J
+  nodesData = json.laod(J)
+
+>>> type(nodesData)
+<type 'dict'>
+>>> type(nodesData[u'nodes'])
+<type 'list'>
+>>> type(nodesData[u'nodes'][1])
+<type 'dict'>
+
+>>> type(nodesData)
+<type 'dict'>
+>>> type(nodesData[u'edges'])
+<type 'list'>
+>>> type(nodesData[u'edges'][1])
+<type 'dict'>
+>>> type(nodesData[u'nodes'][1][u'label'])
+<type 'unicode'>
+>>> type(nodesData[u'edges'][246][u'source'])
+<type 'int'>
+>>> type(nodesData[u'edges'][246][u'cost'])
+<type 'float'>
+>>> type(nodesData[u'edges'][246][u'target'])
+<type 'int'>
+
+
+
+>>> nodesData[u'nodes'][18]
+{u'label': u'Erde'}
+>>> nodesData[u'nodes'][246]
+{u'label': u'b3-r7-r4nd7'}
+>>> nodesData[u'nodes'][1][u'label']
+u'node_1'
+
+
+>>> nodesData[u'edges'][246]
+{u'source': 419, u'cost': 0.6911841478485223, u'target': 615}
+KeyboardInterrupt
+>>> nodesData[u'edges'][246][u'source']
+419
+>>> nodesData[u'edges'][246][u'cost']
+0.6911841478485223
+>>> nodesData[u'edges'][246][u'target']
+615
+
+
+     |  +---------------+-------------------+
+     |  | JSON          | Python            |
+     |  +===============+===================+
+     |  | object        | dict              |
+     |  +---------------+-------------------+
+     |  | array         | list              |
+     |  +---------------+-------------------+
+     |  | string        | unicode           |
+     |  +---------------+-------------------+
+     |  | number (int)  | int, long         |
+     |  +---------------+-------------------+
+     |  | number (real) | float             |
+     |  +---------------+-------------------+
+     |  | true          | True              |
+     |  +---------------+-------------------+
+     |  | false         | False             |
+     |  +---------------+-------------------+
+
+     |  +-------------------+---------------+
+     |  | Python            | JSON          |
+     |  +===================+===============+
+     |  | dict              | object        |
+     |  +-------------------+---------------+
+     |  | list, tuple       | array         |
+     |  +-------------------+---------------+
+     |  | str, unicode      | string        |
+     |  +-------------------+---------------+
+     |  | int, long, float  | number        |
+     |  +-------------------+---------------+
+     |  | True              | true          |
+     |  +-------------------+---------------+
+     |  | False             | false         |
+     |  +-------------------+---------------+
+     |  | None              | null          |
+     |  +-------------------+---------------+
+
+
+>>> nc.keys()
+[u'nodes', u'edges']
+>>> nc[u'nodes'][0].keys()
+[u'label']
+>>> nc[u'edges'][0].keys()
+[u'source', u'cost', u'target']
+
+
+CI = CurrentIndex #choose the one which yielded minimum cost from the neighbours analysis
+NI = NeighbouringIndex #based on the available edges from one planet to another planet 
+
+CI    |   X  |   Y  |   Z  |      |      |      |      |      |      |      |      |      |      |
+------|-----------------------------------------------------------------------------------------------
+Earth | X.c  |   
+  X   |      | Y.c  |  Z.c |
+      |
+      |
+      |
+      |
+      |
+      |
+      |
+      |
+      |
+      |
+      |
+      |
+      |
+      |
